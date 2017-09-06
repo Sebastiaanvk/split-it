@@ -24,7 +24,7 @@ contract SplitIt {
     }
 
     modifier canWithdraw() {
-        bool contains = false
+        bool contains = false;
         for(uint i = 0; i < employees.length; i++) {
           if(employees[i] == msg.sender) {
             contains = true;
